@@ -1,0 +1,147 @@
+.number__info {
+     padding: 40px 20px;
+     border-radius: 10px;
+     background: #FFFFFF;
+     position: relative;
+     top: -55px;
+}
+.rare{
+     top: 90px;
+}
+.map__image {
+     width: 100%;
+     object-fit: cover;
+     margin-bottom: 50px;
+}
+.about{
+     background-color: #f6f6f6;
+     padding-top: 40px;
+}
+.sponsor__icon {
+     color: #DDE0E4;
+     font-size: 80px;
+     margin: 40px auto;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: .5s ease-in-out;
+
+     // padding: 0 55px;
+     &:hover {
+          color: #F53838;
+     }
+}
+
+.testmonial,
+.network {
+     background-color: #fff;
+}
+
+.testmonial {
+     padding-bottom: 100px;
+     .carousel{
+          height: 240px;
+          position: relative;
+          .direction {
+               text-align: center;
+               width: 100%;
+               position: absolute;
+               bottom: -40px;
+               left: 0;
+               right: 0;
+               margin-left: auto;
+               margin-right: auto;
+               
+               button{
+                    height: 60px;
+                    width: 61px;
+                    background: none;
+                    border:none;
+                    margin: 0 10px;
+                    .arrowRight {
+                         transform: rotate(180deg);
+                         
+                    }
+                    img{
+                         height: 60px;
+                         width: 60px;
+                         border-radius: 50%;
+                         transition: .5s ease-in-out;
+                         filter: grayscale(1);
+                         &:hover{
+                              filter: grayscale(0);
+                         }
+                        
+                    }
+                    &:focus{
+                         outline: 0;
+                    }
+               }
+              
+          }
+     }
+}
+.notfound{
+     height: 70vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+         color: #4F5665;
+         
+    }
+}
+.subscribe {
+     padding: 20px 60px;
+
+     h2 {
+          margin-top: 0 !important;
+          font-size: 35px;
+          font-weight: 500;
+     }
+
+     .btn {
+          padding: 20px 0;
+          display: flex;
+          justify-content: flex-end;
+
+          .big__button {
+               margin: 0 !important;
+               height: 60px;
+               width: 250px;
+               text-align: center;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               line-height: 0;
+               padding: 0;
+          }
+     }
+}
+
+@media (max-width:600px) {
+     .about_image {
+          width: 100%;
+          object-fit: cover;
+     }
+
+     .sponsor__icon {
+          width: 100%;
+     }
+
+     .subscribe {
+          padding: 20px 0;
+          text-align: center !important;
+
+          h2,
+          p {
+               text-align: center;
+          }
+
+          .btn {
+               justify-content: center;
+          }
+     }
+}

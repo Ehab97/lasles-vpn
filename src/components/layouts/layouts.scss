@@ -1,0 +1,216 @@
+header {
+  background-color: #fff;
+  padding-bottom: 0;  
+}
+nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+
+  line-height: 100px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  padding: 5px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #4F5665;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  color: #F53838;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/*banner*/
+.banner {
+  margin: 10px auto;
+ 
+
+  h1 {
+    color: #0B132A;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 40px auto;
+  }
+
+  p {
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #F53838;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  .MuiContainer-root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.sign {
+  a {
+    color: #0B132A;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all .5s;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    a {
+      border: 1px solid #F53855;
+      color: #F53855;
+    }
+  }
+}
+
+.sign .active {
+  border: 1px solid #F53855;
+  color: #F53855;
+}
+
+
+.banner {
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 700px) {
+  .banner {
+    text-align: center;
+    
+  }
+
+ 
+}
+//footer
+footer{
+  background-color: #F8F8F8;
+  padding: 50px 0;
+  .brief{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    .logo{
+      margin-bottom: 20px;
+    }
+    p{
+      color: #4F5665;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px auto;
+      width: 100%;
+    }
+    ul{
+      margin: 20px 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      li{
+        width: 33.33px;
+        height: 33.33px;
+        color: #F53838;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px 0 #0000000f;
+        a{
+          text-decoration: none;
+          color: #F53838;
+        }
+      }
+    }
+    .copy{
+      color: #AFB5C0;
+    }
+  }
+}
