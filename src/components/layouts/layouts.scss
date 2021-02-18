@@ -6,6 +6,8 @@ nav {
   background: #fff;
   height: 80px;
   width: 100%;
+  position: relative;
+  z-index: 9999;
 }
 
 label.logo {
